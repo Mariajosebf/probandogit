@@ -7,10 +7,11 @@
   <title>Desafío Branching</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Space+Mono" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
   <div class="container">
-    <h1>Ir a Github</h1>
+    <h1 id="hh">Ir a Github</h1>
     <a href="https://github.com/">
       <img src="https://assets-cdn.github.com/images/modules/logos_page/Octocat.png" alt="octocat">
     </a>
@@ -19,4 +20,13 @@
     </button>
   </div>
 </body>
+
+<script>
+  $(document).ready(function(){
+    $("button").click(function(){
+      $("#hh").css("color", "magenta").slideUp(2000).slideDown(2000);
+    });
+  });
+  </script>
+
 </html>
